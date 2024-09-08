@@ -1,0 +1,7 @@
+import "../../casts/u64_array_to_bool_array" as to_bits;
+import "utils/pack/bool/pack";
+
+def main<N> (u64[N] input) -> field {
+    bool[N*64] bits = to_bits(input);
+    return pack(bits);
+}

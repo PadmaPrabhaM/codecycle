@@ -1,0 +1,5 @@
+import "./pack" as pack;
+
+def main(u64[2] input) -> field {
+    return pack(input);
+}
